@@ -1,9 +1,8 @@
 ### Install CLI for Google Cloud Platform
-
 ```
 $ curl https://sdk.cloud.google.com | bash
 ```
-### Iniciate, log in and select your GCP project
+### Initiate, log in and select your GCP project
 ```
 $ gcloud init
 ```
