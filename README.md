@@ -7,7 +7,7 @@
 ```
 ./gcp
 ```
-## aws instructions [to-do]
+## aws instructions
 ```
 ./aws
 ```
