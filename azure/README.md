@@ -1,3 +1,4 @@
+##### [notes] I'am using Debian 10 (with WSL) for this demo.
 ### Install CLI for Microsoft Azure
 ```
 $ curl -L https://aka.ms/InstallAzureCli | bash
@@ -9,6 +10,7 @@ $ exec -l $SHELL
 ### Check AzureCLI version
 ```
 $ az --version
+
 ```
 ##### [optional] If you don't have `kubectl` installed
 ```

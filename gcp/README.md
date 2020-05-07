@@ -1,10 +1,19 @@
-### Install CLI for Google Cloud Platform
+##### [notes] I'am using Debian 10 (with WSL) for this demo.
+### Install CLI for Google Cloud Platform - GCP
 ```
 $ curl https://sdk.cloud.google.com | bash
 ```
 ### Initiate, log in and select your GCP project
 ```
 $ gcloud init
+```
+### Check `gcloud` version
+```
+$ gcloud --version
+Google Cloud SDK 291.0.0
+bq 2.0.57
+core 2020.05.01
+gsutil 4.50
 ```
 ### Enable the Compute Engine APIs for the project selected
 ```
