@@ -1,2 +1,13 @@
 # k8s-knowledge
-Simples K8s cluster on GCP
+## azure instructions
+```
+./azure
+```
+## gcp instructions
+```
+./gcp
+```
+## aws instructions [to-do]
+```
+./aws
+```
