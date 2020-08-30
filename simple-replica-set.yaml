@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: alpaca-prod
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: alpaca-prod
+  template:
+    metadata:
+      labels:
+        tier: alpaca-prod
+    spec:
+      containers:
+      - name: alpaca-prod
+        image: gcr.io/kuar-demo/kuard-amd64:blue

@@ -45,6 +45,10 @@ $ kubectl port-forward replicaset/<pod-name> <local-port>:<container-port>
 or
 $ kubectl port-forward service/<pod-name> <local-port>:<container-port>
 ```
+## Keeping notes
+> Liveness determines if an application is running properly.
+> Readiness describes when a container is ready to serve user requests.
+
 
 # References:
 
