@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: be-default-deployment
+  name: be-default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: be-default-deployment
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: be-default-deployment
+    spec:
+      containers:
+      - image: gcr.io/kuar-demo/kuard-amd64:blue
+        name: be-default
+        ports:
+        - containerPort: 8080

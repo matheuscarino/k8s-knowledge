@@ -45,9 +45,16 @@ $ kubectl port-forward replicaset/<pod-name> <local-port>:<container-port>
 or
 $ kubectl port-forward service/<pod-name> <local-port>:<container-port>
 ```
+## Ingress Controllers
+
+### Contour './contour/'
+Project: https://github.com/projectcontour/contour
+
+
 ## Keeping notes
-> Liveness determines if an application is running properly.
-> Readiness describes when a container is ready to serve user requests.
+> ***Liveness*** determines if an application is running properly.
+
+> ***Readiness*** describes when a container is ready to serve user requests.
 
 
 # References:

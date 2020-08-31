@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: alpaca-deployment
+  name: alpaca
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: alpaca-deployment
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: alpaca-deployment
+    spec:
+      containers:
+      - image: gcr.io/kuar-demo/kuard-amd64:green
+        name: alpaca
+        ports:
+        - containerPort: 8080

@@ -1,0 +1,8 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: be-default-ingress
+spec:
+  backend:
+    serviceName: be-default
+    servicePort: 8080

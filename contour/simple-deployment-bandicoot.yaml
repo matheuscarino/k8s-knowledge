@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: bandicoot-deployment
+  name: bandicoot
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: bandicoot-deployment
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: bandicoot-deployment
+    spec:
+      containers:
+      - image: gcr.io/kuar-demo/kuard-amd64:purple
+        name: bandicoot
+        ports:
+        - containerPort: 8080
