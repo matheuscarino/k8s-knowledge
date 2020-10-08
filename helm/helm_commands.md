@@ -44,3 +44,7 @@ $ helm status < release-name >
 ## Getting more info
 
 $ helm get -h
+
+### Notes
+
+Since Helm version 3, tiller service account and custom ClusterRoleBinding is no longer required

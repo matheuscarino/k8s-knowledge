@@ -95,9 +95,13 @@ Project: https://github.com/projectcontour/contour
 ## Books
 
 [Kubernetes – Up and Running, Dive Into the Future of Infrastructure by Brendan Burns, Joe Beda, Kelsey Hightower][1]
+
 [Kubernetes – A Complete DevOps Cookbook: Build and manage your applications, orchestrate containers, and deploy cloud-native services][2]
+
 [Kubernetes Best Practices - Blueprints for Building Successful Applications on Kubernetes][3]
+
 [Kubernetes Operators - Automating the Container Orchestration Platform][4]
+
 [Container Security - Fundamental Technology Concepts that Protect Containerized Applications][5]
 
 ## Kubernetes Documentation
