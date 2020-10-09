@@ -56,3 +56,25 @@ $ kubectl get nodes
 ```
 $ gcloud container clusters delete k8s-testing-1
 ```
+
+## Applications Docs
+
+### Login on Google Cloud Registry
+
+$ gcloud auth configure-docker
+
+### Deploying a simple golang web app
+
+$ cd simple-golang-webapp/
+$ docker build -t gcr.io/<gcp-project-id>/hello-app:v1 .
+$ docker push gcr.io/<gcp-project-id>/hello-app:v1
+$ kubectl create deployment hello-app --image=gcr.io/<gcp-project-id>/hello-app:v1
+$ kubectl scale deployment hello-app --replicas=3
+$ kubectl autoscale deployment hello-app --cpu-percent=80 --min=1 --max=5
+$ kubectl expose deployment hello-app --name=hello-app-service --type=LoadBalancer --port 80 --target-port 8080
+
+### Delete it
+
+$ kubectl delete service hello-app-service
+$ kubectl delete deployment hello-app
+$ gcloud container images delete gcr.io/carinotecnologia/hello-app:v1  --force-delete-tags --quiet

@@ -1,0 +1,17 @@
+# [START container_helloapp_service]
+apiVersion: v1
+kind: Service
+metadata:
+  name: helloweb
+  labels:
+    app: hello
+spec:
+  selector:
+    app: hello
+    tier: web
+  ports:
+  - port: 80
+    targetPort: 8080
+  type: LoadBalancer
+  loadBalancerIP: "YOUR.IP.ADDRESS.HERE"
+# [END container_helloapp_service]
